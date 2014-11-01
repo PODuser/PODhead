@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#2780d4"
+    android:fitsSystemWindows="false" >
+
+ 
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ToggleButton
+                android:id="@+id/tb_equalizeron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:textColor="@color/text_white"
+                android:textOff="Equalizer Off"
+                android:textOn="Equalizer On"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/btn_savepresets"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Save"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_lvl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Level:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_lvl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_band1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="Band 1:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_band1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <SeekBar
+                android:id="@+id/sb_band1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="90" />
+            
+        </TableRow>     
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_band2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="Band 2:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_band2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <SeekBar
+                android:id="@+id/sb_band2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="90" />
+            
+        </TableRow> 
+        
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_band3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="Band 3:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_band3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <SeekBar
+                android:id="@+id/sb_band3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="90" />
+            
+        </TableRow>         
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_band4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="Band 4:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_band4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <SeekBar
+                android:id="@+id/sb_band4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="90" />
+            
+        </TableRow>         
+        
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_band5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="Band 5:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_band5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <SeekBar
+                android:id="@+id/sb_band5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="90" />
+            
+        </TableRow>         
+        
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_band6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="Band 6:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_band6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <SeekBar
+                android:id="@+id/sb_band6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="90" />
+            
+        </TableRow>         
+        
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_band7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="Band 7:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_band7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <SeekBar
+                android:id="@+id/sb_band7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="90" />
+            
+        </TableRow>         
+        
+        
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_band8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="Band 8:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_band8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <SeekBar
+                android:id="@+id/sb_band8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="90" />
+            
+        </TableRow>         
+        
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_band9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="Band 9:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_band9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <SeekBar
+                android:id="@+id/sb_band9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="90" />
+            
+        </TableRow>         
+        
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_band10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="Band 10:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_band10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <SeekBar
+                android:id="@+id/sb_band10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="90" />
+            
+        </TableRow>         
+        
+        </TableLayout>          
+        
+</ScrollView>

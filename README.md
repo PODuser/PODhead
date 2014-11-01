@@ -1,4 +1,6 @@
 PODhead
 =======
+Main repository for PODhead project
 
-Code for PODhead
+Version                              Description of Changes
+1.0                                  Initial 

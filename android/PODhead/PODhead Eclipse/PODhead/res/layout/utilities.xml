@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2780d4" >
+
+        <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="100" >
+    
+           <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:text="Bluetooth Status"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_weight="100"
+        android:textSize="26sp">
+        
+		</TextView>
+            </TableRow>
+            
+    
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/btlogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bluetooth_icon" />
+
+
+            <Button
+                android:id="@+id/btn_connect"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:gravity="center"
+                android:text="Connect"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+            
+            <Button
+                android:id="@+id/btn_disconnect"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:gravity="center"
+                android:text="Disconnect"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+            </TableRow>
+    </TableLayout>
+
+</ScrollView>

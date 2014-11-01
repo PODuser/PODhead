@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#2780d4"
+    android:fitsSystemWindows="false" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ToggleButton
+                android:id="@+id/tb_reverbon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:textColor="@color/text_white"
+                android:textOff="Reverb Off"
+                android:textOn="Reverb On"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/btn_savepresets"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Save"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+        </TableRow>
+
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text=" Type:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+           <EditText
+                android:id="@+id/et_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:ems="10"
+                android:gravity="center" >
+
+            </EditText>
+
+        </TableRow>        
+        
+                    
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_fx"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="FX %:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_fx"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_drylvl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Dry Level:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_fx"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </TableRow>  
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_bal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Balance:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_bal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </TableRow>        
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_density"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Density:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_density"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </TableRow>        
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_diff"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Diffusion:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_diff"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </TableRow>        
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_dis"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Dispersion:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_dis"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_xover"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Cross Over:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_xover"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </TableRow>        
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_freq"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Freq. Cut-off:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_freq"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </TableRow>        
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_damping"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Damping:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_damping"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </TableRow>        
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_delay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Delay:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_delay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:maxLength="3"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </TableRow>        
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_size"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Room Size:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_size"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </TableRow>        
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_reflect"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Reflections:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_reflect"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </TableRow>                  
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_outl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Left Level:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_outl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </TableRow>        
+ 
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_outr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text=" Right Level:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_outr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </TableRow>        
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_poutl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="% of Right @ Left:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_poutl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </TableRow>            
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_poutr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="% of Left @ Right:"
+                android:textColor="@color/text_white"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/et_poutr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </TableRow>           
+        
+</TableLayout>
+
+</ScrollView>

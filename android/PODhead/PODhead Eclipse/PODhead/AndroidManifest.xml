@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.podhead"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/podhead_tubes"
+        android:label="@string/string_podhead"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.podhead.MainActivity"
+            android:label="@string/string_podhead" 
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            </activity>
+        <activity
+            android:name="com.example.podhead.Choruspresets"
+            android:label="@string/string_podhead" >
+            <intent-filter>
+                <action android:name="android.intent.action.CHORUSPRESETS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>            
+        <activity
+            android:name="com.example.podhead.Compressorpresets"
+            android:label="@string/string_podhead" >
+            <intent-filter>
+                <action android:name="android.intent.action.COMPRESSORPRESETS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>            
+        <activity
+            android:name="com.example.podhead.Delay"
+            android:label="@string/string_podhead" >
+            <intent-filter>
+                <action android:name="android.intent.action.DELAY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>            
+        <activity
+            android:name="com.example.podhead.Delaypresets"
+            android:label="@string/string_podhead" >
+            <intent-filter>
+                <action android:name="android.intent.action.DELAYPRESETS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>            
+        <activity
+            android:name="com.example.podhead.Detunepresets"
+            android:label="@string/string_podhead" >
+            <intent-filter>
+                <action android:name="android.intent.action.DETUNEPRESETS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>            
+        <activity
+            android:name="com.example.podhead.Distortion"
+            android:label="@string/string_podhead" >
+            <intent-filter>
+                <action android:name="android.intent.action.DISTORTION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>            
+        <activity
+            android:name="com.example.podhead.Distortpresets"
+            android:label="@string/string_podhead" >
+            <intent-filter>
+                <action android:name="android.intent.action.DISTORTPRESETS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>            
+        <activity
+            android:name="com.example.podhead.Equalizerpresets"
+            android:label="@string/string_podhead" >
+            <intent-filter>
+                <action android:name="android.intent.action.EQUALIZERPRESETS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>            
+        <activity
+            android:name="com.example.podhead.Flangerpresets"
+            android:label="@string/string_podhead" >
+            <intent-filter>
+                <action android:name="android.intent.action.FLANGERPRESETS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>            
+        <activity
+            android:name="com.example.podhead.Noisegatepresets"
+            android:label="@string/string_podhead" >
+            <intent-filter>
+                <action android:name="android.intent.action.NOISEGATEPRESETS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity> 
+        <activity
+            android:name="com.example.podhead.Phaserpresets"
+            android:label="@string/string_podhead" >
+            <intent-filter>
+                <action android:name="android.intent.action.PHASERPRESETS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>                        
+        <activity            
+            android:name="com.example.podhead.Pitchpresets"
+            android:label="@string/string_podhead" >
+            <intent-filter>
+                <action android:name="android.intent.action.PITCHPRESETS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>                        
+        <activity
+            android:name="com.example.podhead.Reverbpresets"
+            android:label="@string/string_podhead" >
+            <intent-filter>
+                <action android:name="android.intent.action.REVERBPRESETS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>            
+        <activity
+            android:name="com.example.podhead.Rotarypresets"
+            android:label="@string/string_podhead" >
+            <intent-filter>
+                <action android:name="android.intent.action.ROTARYPRESETS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>            
+        <activity
+            android:name="com.example.podhead.Userpresets"
+            android:label="@string/string_podhead"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.USERPRESETS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>            
+        <activity
+            android:name="com.example.podhead.Utilities"
+            android:label="@string/string_podhead" >
+            <intent-filter>
+                <action android:name="android.intent.action.UTILITIES" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>            
+        <activity
+            android:name="com.example.podhead.Wahpresets"
+            android:label="@string/string_podhead" >
+            <intent-filter>
+                <action android:name="android.intent.action.WAHPRESETS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>            
+        
+    </application>
+
+</manifest>

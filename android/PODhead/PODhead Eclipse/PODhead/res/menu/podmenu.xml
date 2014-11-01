@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/about" android:title="About"></item>
+    <item android:id="@+id/userpresets" android:title="Userpresets"></item>
+    <item android:id="@+id/distortion" android:title="Distortion"></item>
+    <item android:id="@+id/delay" android:title="Delay"></item>
+    <item android:id="@+id/chorus" android:title="Chorus"></item>
+    <item android:id="@+id/compressor" android:title="Compressor"></item>
+    <item android:id="@+id/detune" android:title="Detune"></item>
+    <item android:id="@+id/equalizer" android:title="Equalizer"></item>
+    <item android:id="@+id/flange" android:title="Flange"></item>
+    <item android:id="@+id/noisegate" android:title="Noisegate"></item>
+    <item android:id="@+id/reverb" android:title="Reverb"></item>
+    <item android:id="@+id/rotary" android:title="Rotary"></item>
+    <item android:id="@+id/wah" android:title="Wah"></item>
+    <item android:id="@+id/phaser" android:title="Phaser"></item>
+    <item android:id="@+id/pitch" android:title="Pitch"></item>
+    <item android:id="@+id/video" android:title="Video"></item>    
+    <item android:id="@+id/utilities" android:title="Utilities"></item>
+</menu>
